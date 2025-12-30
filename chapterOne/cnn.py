@@ -6,3 +6,5 @@ from dataset.mnist import load_mnist
 
 import matplotlib.pyplot as plt
 from two_layer_net import *
+if __name__ == '__main__':
+    print("hello world")
