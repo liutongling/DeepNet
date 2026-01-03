@@ -51,20 +51,20 @@ def Test():
     #print(s[np.arange(20),t])
 
 
-if __name__ == '__main__':
-    # if response.status_code == 200:
-    #     result = response.json()
-    #     print(result['choices'][0]['message']['content'])
-    # else:
-    #     print("请求失败，错误码：", response.status_code)
-    #Test()
-    numerical_gradient(function,np.array([3.0,4.0]))
-    s = Sigmod()
-    s.a = 1
-    s.backward(1)
-    nt = np.random.rand(2,3)
-    print(nt)
-    print(type(nt))
-    s = np.array([[2,2,2],[2,2,2]])
-    t = np.array([[2,2,2],[2,2,2]])
-    print(s*t)
+# if __name__ == '__main__':
+#     # if response.status_code == 200:
+#     #     result = response.json()
+#     #     print(result['choices'][0]['message']['content'])
+#     # else:
+#     #     print("请求失败，错误码：", response.status_code)
+#     #Test()
+#     numerical_gradient(function,np.array([3.0,4.0]))
+#     s = Sigmod()
+#     s.a = 1
+#     s.backward(1)
+#     nt = np.random.rand(2,3)
+#     print(nt)
+#     print(type(nt))
+#     s = np.array([[2,2,2],[2,2,2]])
+#     t = np.array([[2,2,2],[2,2,2]])
+#     print(s*t)
