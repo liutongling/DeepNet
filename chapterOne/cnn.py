@@ -1,9 +1,10 @@
 # coding: utf-8
+import pickle
 import sys,os
 sys.path.append(os.pardir) # 设定当前的路径
 import numpy as np
 from dataset.mnist import load_mnist
-
+import json
 import matplotlib.pyplot as plt
 from two_layer_net import *
 
@@ -34,4 +35,13 @@ if __name__ == '__main__':
         loss = network.loss(x_batch, y_batch)
         train_loss_list.append(loss)
         print("this is loss%f",loss)
+
+    network.params
+    # 将神经网络参数保存保存到文件中，用于后续预测
+    with open('cnn_params.pkl', 'wb') as f:
+        pickle.dump(network.params, f)
+    # with open('cnn_params.pkl', 'rb') as f:
+    #     params = pickle.load(f)
+    #print(params)
+
 
